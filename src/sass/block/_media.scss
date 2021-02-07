@@ -1,0 +1,379 @@
+@media (max-width: 1439px) {
+  .sidepanel {
+    display: none;
+  }
+  // .portfolio {
+  //   &__wrapper {
+  //     grid-template-columns: repeat(auto-fit, 280px);
+  //   }
+  // }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .about {
+    padding-top: 50px;
+    &__wrapper {
+      grid-template-columns: 400px 520px;
+      column-gap: 40px;
+    }
+    &__skills {
+      grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+      column-gap: 20px;
+      &-item {
+        grid-template-columns: 40px 195px;
+        column-gap: 15px;
+      }
+    }
+  }
+  .resume {
+    padding-top: 45px;
+    &__wrapper {
+      padding: 60px 30px 0 30px;
+      column-gap: 45px;
+    }
+  }
+  .myskills {
+    padding-top: 70px;
+    &__wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__made {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__block {
+      justify-content: space-around;
+    }
+  }
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-auto-rows: 280px;
+      justify-content: space-around;
+      row-gap: 35px;
+      .horizontal,
+      .vertical {
+        grid-column: unset;
+        grid-row: unset;
+      }
+      .vertical {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .price-list {
+    padding-top: 40px;
+    &__wrapper {
+      column-gap: 60px;
+      justify-content: center;
+    }
+  }
+  .contacts {
+    &__wrapper {
+      padding: 0 20px 90px 20px;
+      grid-template-columns: 300px 585px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .about {
+    &__wrapper {
+      grid-template-columns: 300px 380px;
+      column-gap: 38px;
+    }
+    &__text {
+      font-size: 12px;
+    }
+    &__skills {
+      grid-template-columns: 360px;
+      grid-auto-rows: minmax(115px, auto);
+      &-item {
+        grid-template-columns: 40px 320px;
+      }
+    }
+  }
+  .title {
+    font-size: 30px;
+    &_fz16 {
+      font-size: 16px;
+    }
+    &_fz14 {
+      font-size: 20px;
+    }
+    &_fz20 {
+      font-size: 24px;
+    }
+  }
+  .resume {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      &-head {
+        h4 {
+          font-size: 16px;
+        }
+      }
+      &-location {
+        font-size: 11px;
+      }
+    }
+  }
+  .myskills {
+    &__made {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 40px;
+    }
+    &__block {
+      justify-content: space-between;
+      &-line {
+        width: 340px;
+      }
+    }
+  }
+  .price-list {
+    padding-top: 40px;
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 350px);
+      padding: 0;
+      padding-top: 20px;
+    }
+    .fz14 {
+      font-size: 14px;
+    }
+  }
+  .contacts {
+    &__wrapper {
+      padding: 0px 10px 90px 10px;
+      grid-template-columns: 280px 1fr;
+      column-gap: 10px;
+    }
+    &__form {
+      grid-template-columns: repeat(2, auto);
+      column-gap: 10px;
+    }
+    &__btn {
+      font-size: 10px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .promo {
+    &__title {
+      width: 300px;
+      line-height: 39px;
+    }
+  }
+  .about {
+    padding-top: 40px;
+    &__wrapper {
+      grid-template: 400px auto auto / 1fr;
+    }
+    &__photo {
+      grid-row: unset;
+    }
+    &__skills {
+      grid-template-columns: repeat(2, 260px);
+      &-item {
+        grid-template-columns: 40px 200px;
+        column-gap: 20px;
+      }
+    }
+    .title {
+      &_fz14 {
+        font-size: 14px;
+      }
+    }
+  }
+  .resume {
+    &__wrapper {
+      padding: 40px 65px 0 65px;
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+    }
+    &__item {
+      &-location {
+        font-size: 12px;
+      }
+    }
+  }
+  .myskills {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__made {
+      grid-template-columns: 340px;
+      justify-content: center;
+      row-gap: 48px;
+    }
+    &__block {
+      justify-content: space-between;
+      &-line {
+        width: 340px;
+      }
+    }
+  }
+  .contacts {
+    &__wrapper {
+      padding: 0px 10px 90px 10px;
+      grid-template-columns: 1fr;
+      column-gap: 10px;
+    }
+    &__btn {
+      font-size: 14px;
+    }
+    &__policy {
+      span {
+        font-size: 11px;
+      }
+    }
+    &__photo {
+      display: none;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .title {
+    &_fz48 {
+      font-size: 26px;
+    }
+  }
+  .hamburger {
+    right: 20px;
+  }
+  .promo {
+    background: url("https://kiyavia.com/files/TravelProviderInUkraine/cities/odessa/Odessa_MainSlide.jpg")
+      no-repeat 7% / cover;
+    &__btns {
+      margin-top: 30px;
+    }
+    &__title {
+      width: 270px;
+    }
+  }
+  .menu {
+    &__block {
+      width: 250px;
+      padding-left: 20px;
+    }
+  }
+  .about {
+    &__wrapper {
+      grid-template: 340px auto auto / 1fr;
+    }
+    &__skills {
+      grid-template-columns: 1fr;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
+  .title {
+    font-size: 24px;
+    &_fz16 {
+      font-size: 16px;
+    }
+  }
+  .resume {
+    &__colum {
+      &-title {
+        font-size: 20px;
+      }
+    }
+    &__wrapper {
+      padding: 40px 12px 0 15px;
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+    }
+    &__item {
+      &-location {
+        font-size: 12px;
+      }
+      &-head {
+        h4 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .myskills {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+    &__made {
+      padding-top: 40px;
+      grid-template-columns: repeat(auto-fit, 300px);
+      justify-content: center;
+      row-gap: 48px;
+    }
+    &__block {
+      justify-content: space-between;
+      &-line {
+        width: 280px;
+      }
+    }
+  }
+  .portfolio {
+    padding-top: 40px;
+    &__wrapper {
+      padding-top: 40px;
+      justify-content: center;
+    }
+  }
+  .price-list {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 295px);
+    }
+    &__item {
+      &-descr {
+        width: 270px;
+      }
+    }
+  }
+  .contacts {
+    padding-top: 40px;
+    &__form {
+      grid-template-columns: 1fr;
+      grid-template-rows: 45px 45px 190px minmax(45px, auto);
+      row-gap: 30px;
+    }
+    &__textarea {
+      grid-column: unset;
+      width: 100%;
+    }
+    &__triggers {
+      grid-template-columns: 1fr;
+      grid-column: unset;
+      column-gap: unset;
+    }
+    &__text {
+      font-size: 14px;
+      font-weight: 700;
+      width: 280px;
+    }
+    &__btn {
+      order: 2;
+      font-size: 14px;
+      max-width: 220px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    &__policy {
+      width: 170px;
+      margin: 0 auto;
+    }
+  }
+}
